@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>retraunt</title>
+<link rel="stylesheet" href="food.css">
+<style>
+#shraddhey
+{
+display:flex;
+display:inline;
+}
+</style>
+</head>
+<body>
+<img src="images/final.jpg" height="200" width="200" id="shraddhey">
+<img src="images/final.jpg" height="200" width="200">
+<ul class="main-nav">
+<li class="sub-items"> <a href="#menu">Menu</a>
+<ul class="sub-menu">
+	<li class="appetiser"><a href="appetizer.html">Appetizer <span>&#8250;</span></li>
+	<li class="main-course"><a href=" ">Main Course <span>&#8250;</span></li>
+	<li class="desert"><a href=" ">Desert	<span>&#8250;</span></li>
+</ul>
+</li>
+<li> <a href="contact.html">Contact Us</a></li>
+</ul>
+
+<div class="item-container" id="appetizerImage"><img src="images/appetizer.jpg"> <p onclick="hideAppetizer()">&#215;</p></div>
+<div class="item-container" id="mainCourseImage"><img src="images/main_course.jpg"><img src="images/main_course2.jpg"> <p onclick="hideMainCourse()">&#215;</p></div>  
+<div class="item-container" id="desertImage"><img src="images/desert.jpg">  <p onclick="hideDesertImage()">&#215;</p></div>
+<div class="title-container">
+<p>"There is no inexhaustible aspect of everyday life that never dulls,namely the simple pleasure of eating and drinking." ~ Andre Domine</p>
+</div>
+<div class="container" style="width: 100%; height: 1000px; background-color: #fff;">
+	
+</div>
+</body>
+<script>
+
+function showAppetizer(){
+	var content = document.getElementById('appetizerImage');
+	content.style.display="block";
+}
+function showMainCourse(){
+	var content = document.getElementById('mainCourseImage');
+	content.style.display="block";
+}
+function showDesert(){
+	var content = document.getElementById('desertImage');
+	content.style.display="block";
+}
+function hideAppetizer(){
+	var content = document.getElementById('appetizerImage');
+	content.style.display="none";
+}
+function hideMainCourse(){
+	var content = document.getElementById('mainCourseImage');
+	content.style.display="none";
+}
+function hideDesertImage(){
+	var content = document.getElementById('desertImage');
+	content.style.display="none";
+}
+</script>
+</html>

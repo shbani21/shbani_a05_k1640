@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY</title>
+<style>
+div {background-color: black;}
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+
+
+ home {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.home a:hover {
+    background-color: blue;
+}
+</style>
+<body>
+
+<!-- Navigation -->
+<center>
+<div class="home">
+  <a href="home page.html">Home</a>
+  <a href="food.html">Food Menu</a>
+  <a href="reservation.html">Reservation</a>
+  <a href="about us.html">Contact</a>
+  <a href="">Online Orders</a>
+  <a href="#about">About</a>
+</div>
+</center>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="aaapelaregronliten1.jpg"
+  style="width:100%">
+  <img class="mySlides" src="51520-hospitality-service-quotes.jpg"
+  style="width:100%">
+  <img class="mySlides" src="wJS6vk8.jpg"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">Hotel</h2>
+  <p class="w3-opacity"><i>We love hospitality</i></p>
+  <p class="w3-justify">We have created a fictional hotel management website.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>The team</p>
+    <img src="409875_gallery.world.jpg" alt="Random Name" style="width:100%">
+    <p><center><q>A health diet keeps u happy.</q></center></p>
+  </article>
+  <article class="w3-third">
+    <p>Paul</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Paul is the prettiest.</p>
+  </article>
+  <article class="w3-third">
+    <p>Ringo</p>
+    <img src="img_bandmember.jpg" alt="Random Name" style="width:100%">
+    <p>Ringo is the funniest.</p>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="#"><i class="fa fa-facebook-official"></i></a>
+  <a href="#"><i class="fa fa-pinterest-p"></i></a>
+  <a href="#"><i class="fa fa-twitter"></i></a>
+  <a href="#"><i class="fa fa-flickr"></i></a>
+  <a href="#"><i class="fa fa-linkedin"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="http://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
+
+

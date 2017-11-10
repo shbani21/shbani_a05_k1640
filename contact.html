@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact Us</title>
+<link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+<p>Send Us Message</p><br/><br/>
+<form method="post" action="" onsubmit="return send()">
+<br/>
+<label for="form"> ---How Shall We Call You--- </label><br/><input type="text" id="fname" placeholder="Type Your Name Here." required/><br/><br/>
+<label for="form"> ---Share your email--- </label><br/><input type="email" id="email" placeholder="We will keep it safe.We promise!" required/><br/><br/>
+<label for="form"> ---We are all ears--- </label><br/><textarea  id="feedback" placeholder="Share with us any information that might help us to respond to your request." required ></textarea>
+<br/><br/><input type="Submit" value="Send Message" />
+</form> 
+<p class="right-aligned">GET IN TOUCH TO GET THE BALL ROLLING</p>
+<div class="logo">
+	<img src="images/location.png"> <address>Spoon feed Demberg <br/>10/58 02-769 warsajava <br/>India<address>
+</div>
+<ul class="logo">
+<li><img src="images/phone.png"> <pre>+91-9998887766</pre></li>
+<li><img src="images/email.png"> <pre>spoonfeed98@gmail.com<pre></li>
+</ul>	
+</body>
+<script>
+	function send()
+	{
+		var fname = document.getElementById('fname').value;
+		var email = document.getElementById('email').value;
+		var feedback = document.getElementById('feedback').value;
+		if(confirm("first name = "+fname+"\n"+"email = "+email+"\n"+"feedback = "+feedback+"\n", ""))
+		{
+			window.alert("Your Response have been Submitted Successfully..!");
+			return true;
+		}
+		else {
+		window.alert("Check again and enter details.");
+			return false;
+		}
+		
+	}
+</script>
+</html>
